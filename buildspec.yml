@@ -8,12 +8,15 @@ phases:
       - sudo apt-get install nginx -y
   build:
     commands:
-      - echo Build started on 'date'
-      - sudo cp index.html /var/www/html/
+      - echo Build started on `date`
+      - echo Copying application files
   post_build:
     commands:
-      - echo Configuring NGINX
+      - echo Preparing deployment artifacts
 
 artifacts:
   files:
-    - '**/*'
+    - appspec.yml            # Ensure appspec.yml is included
+    - scripts/**             # Include all deployment scripts
+    - index.html             # Include your application files
+    - '**/*'                 # Optional: Include everything else
