@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('images\\wallpapersden.com_dumbbells-fitness-gym_1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.register{
+    font-family:'Montserrat';
+    background-color: #fff;
+    width: 360px;
+    height: 510px;
+    margin:auto;
+    border-radius: 5px;
+    color: #000;
+}
+
+.register .reg{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+.register h4{
+    margin-left: 28px;
+}
+.register h4 a{
+    color: blue;
+}
+
+.register h6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: red;
+}
+form{
+    margin-left: 28px;
+}
+
+.submit{
+    margin-top: 0px;
+    cursor: pointer;
+    background-color: greenyellow;
+    
+}
+input{
+    border: none;
+    background: #f2f2f2;
+    outline: none;
+    padding: 12px;
+    border-radius: 3px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+/* Login css */
+
+
+.login-container{
+    font-family:'Montserrat';
+    background-color: #fff;
+    width: 360px;
+    height: 350px;
+    margin:auto;
+    border-radius: 5px;
+    color: #000;
+}
+
+.login-container .login{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 110px;
+    padding-top: 10px;
+}
+
+.login-container h4{
+    margin-left: 28px;
+}
+
+
+
+/* checkout */
+
+
+.verify{
+    font-family: 'Montserrat';
+    background-color: #fff;
+    width: 360px;
+    height: 250px;
+    margin: auto;
+    border-radius: 5px;
+    color: #000;
+}
+
+.verify p{
+    margin-left: 20px;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.razorpay-payment-button {
+    margin-top: 40px;
+    cursor: pointer;
+    background-color: greenyellow;
+    border: none;
+    margin-left: 0px;
+    padding: 10px 20px;
+    
+}
+
+.verify h3{
+    text-align: center;
+    margin-top: 50%;
+}
+    </style>
+</head>
+<body>
+    <div class="register">
+        <p class="reg">Registration</p>
+        <h4>Already have an account? <a href="login.html">Sign In</a></h4>
+        <form id="registrationForm" onsubmit="submitForm(event)">
+            <label for="email">E-mail*</label><br>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required autocomplete="email"><br>
+
+            <label for="number">Contact Number*</label><br>
+            <input id="number" type="text" name="number" placeholder="Enter your phone number" required autocomplete="tel"><br>
+            <p id="msg" style="color: red;"></p>
+
+            <label for="password">Password*</label><br>
+            <input id="password" type="password" name="password" placeholder="Enter your password" required autocomplete="new-password"><br>
+
+            <label for="cpassword">Confirm Password*</label><br>
+            <input id="cpassword" type="password" name="cpassword" placeholder="Retype password" required autocomplete="new-password"><br>
+            <p id="message" style="color: red;"></p>
+
+            <button type="submit" class="submit">Register</button>
+        </form>
+    </div>
+    <script>
+        
+    function submitForm(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get form data
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('number').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('cpassword').value;
+
+        // Validate passwords match
+        if (password !== confirmPassword) {
+            alert('Passwords do not match!');
+            return;
+        }
+
+        // Create request object
+        const xhr = new XMLHttpRequest();
+
+        // Set up request
+        const apiInvokeUrl = 'https://ms2czr63n5.execute-api.us-east-2.amazonaws.com/production';
+        xhr.open('POST', `${apiInvokeUrl}/register`, true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+
+        // Set up response handler
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    alert('Registration successful!');
+                    document.getElementById('registrationForm').reset();
+                    
+                    // Redirect to index.html after successful registration
+                    window.location.href = 'index.html';
+                } else {
+                    alert('Registration failed: ' + xhr.responseText);
+                }
+            }
+        };
+
+        // Send request
+        xhr.send(JSON.stringify({
+            email: email,
+            phone: phone,
+            password: password,
+            confirmPassword: confirmPassword
+        }));
+    }
+</script>
+
+
+    
+</body>
+</html>

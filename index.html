@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle Mate</title>
+    <script src="https://kit.fontawesome.com/6e8514bc3e.js" crossorigin="anonymous"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('images\\wallpapersden.com_dumbbells-fitness-gym_1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.register{
+    font-family:'Montserrat';
+    background-color: #fff;
+    width: 360px;
+    height: 510px;
+    margin:auto;
+    border-radius: 5px;
+    color: #000;
+}
+
+.register .reg{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+.register h4{
+    margin-left: 28px;
+}
+.register h4 a{
+    color: blue;
+}
+
+.register h6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: red;
+}
+form{
+    margin-left: 28px;
+}
+
+.submit{
+    margin-top: 0px;
+    cursor: pointer;
+    background-color: greenyellow;
+    
+}
+input{
+    border: none;
+    background: #f2f2f2;
+    outline: none;
+    padding: 12px;
+    border-radius: 3px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+/* Login css */
+
+
+.login-container{
+    font-family:'Montserrat';
+    background-color: #fff;
+    width: 360px;
+    height: 350px;
+    margin:auto;
+    border-radius: 5px;
+    color: #000;
+}
+
+.login-container .login{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 110px;
+    padding-top: 10px;
+}
+
+.login-container h4{
+    margin-left: 28px;
+}
+
+
+
+/* checkout */
+
+
+.verify{
+    font-family: 'Montserrat';
+    background-color: #fff;
+    width: 360px;
+    height: 250px;
+    margin: auto;
+    border-radius: 5px;
+    color: #000;
+}
+
+.verify p{
+    margin-left: 20px;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.razorpay-payment-button {
+    margin-top: 40px;
+    cursor: pointer;
+    background-color: greenyellow;
+    border: none;
+    margin-left: 0px;
+    padding: 10px 20px;
+    
+}
+
+.verify h3{
+    text-align: center;
+    margin-top: 50%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@800&family=Poppins:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.nav-bar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: 0px;
+    z-index: 1;
+}
+
+.logo{
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.logo span{
+    color: rgb(171, 223, 58);
+}
+
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-bar ul li a:hover{
+    color: rgb(171, 223, 58);
+}
+
+.register{
+    background-color: rgb(171, 223, 58);
+    padding: 15px 25px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+
+
+.register:hover{
+    background: rgb(171, 223, 58);
+}
+
+
+/* Nav End */
+
+/* Hero Start */
+.hero{
+    background: url("images\\pngimg.com - fitness_PNG109.png");
+    background-color: rgb(24,24,24);
+    height: 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero-title{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 100px;
+    padding-left: 50px;
+    font-size: 60px;
+}
+
+.hero-title strong{
+    color: rgb(171, 223, 58);
+    font-size: 70px;
+}
+
+.hero-title span{
+    font-size: 70px;
+}
+
+.hero-subtitle{
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    padding-left: 50px;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.start-now{
+    margin-left: 50px;
+    background: rgb(171, 223, 58);;
+    padding: 20px 40px;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+
+    font-size: 20px;
+}
+
+/* Hero Section End */
+
+/* About Start */
+.about{
+    display: flex;
+}
+
+.about-image{
+    margin: 30px 80px;
+}
+
+.about-content{
+    color: #fff;
+}
+
+.about-content h2{
+    font-size: 80px;
+    font-family: 'Montserrat';
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.about-content p{
+    color: #ababab;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-content .about-para{
+    margin: 10px;
+}
+/* About End */
+
+/* Courses start */
+.course{
+    padding: 0px 80px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Montserrat';
+}
+.course-container{
+    display: flex;
+    padding: 50px 80px;
+    color: #fff;
+}
+
+.box{
+    background-color: rgb(40,40,40);
+    width: 280px;
+    padding: 0px 10px;
+    height: 350px;
+    margin-right: 10px;
+    transition: .15s;
+}
+
+.box img{
+    background-color: #ababab;
+    height: 60px;
+    border-radius: 10px;
+    margin: 15px 85px;
+}
+
+.box h3{
+    font-family: 'Montserrat';
+    margin: 10px 0px;
+}
+
+.box p{
+    font-family: 'Poppins';
+    color: #ababab;
+    font-size: 18px;
+}
+
+.fa-arrow-right{
+    margin-left: 220px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: rgb(171, 223, 58);
+    color: black;
+}
+
+
+.fa-arrow-right:hover{
+    font-size: 18px;
+    transform: translateX(4px);
+    transition: .15s;
+}
+.box:hover p{
+    color: black;
+}
+/* Courses End */
+
+/* Pricing Start */
+.pricing{
+    padding: 0px 80px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Montserrat';
+    margin-bottom: 20px;
+}
+
+.cap{
+    text-align: center;
+    color: rgb(171, 223, 58);
+    font-family: 'Montserrat';
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.pricing-container{
+    display: flex;
+    padding: 0px 80px;
+    color: #fff;
+    font-family: 'Poppins';
+}
+
+.basic-package{
+    background-color: rgb(40,40,40);
+    width: 280px;
+    height: 300px;
+    margin-bottom: 100px;
+    margin-right: 135px;
+    padding-top: 10px;
+}
+
+.plan-name{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.basic-package p{
+    font-size: 20px;
+    font-family: 'Montserrat';
+    margin-left: 30px;
+    color: rgb(171, 223, 58);
+    margin-bottom: 5px;
+}
+
+.basic-package ul{
+    list-style: none;
+    padding: 0px 10px;
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+
+.basic-package ul li{
+    line-height: 30px;
+}
+
+.basic-package ul li s{
+    opacity: .5;
+}
+
+.fa-regular{
+    color: rgb(171, 223, 58);
+    margin-right: 5px;
+}
+
+.buy-now{
+    background-color: #fff;
+    text-decoration: none;
+    margin-left: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.buy-now:hover{
+    color: #fff;
+    background-color: rgb(171, 223, 58);
+}
+
+
+.premium-package{
+    background-color: rgb(40,40,40);
+    width: 280px;
+    height: 300px;
+    margin-bottom: 100px;
+    margin-right: 135px;
+    padding-top: 10px;
+}
+
+.premium-package p{
+    font-size: 20px;
+    font-family: 'Montserrat';
+    margin-left: 110px;
+    color: rgb(171, 223, 58);
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.premium-package ul{
+    list-style: none;
+    padding: 0px 10px;
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+
+.premium-package ul li{
+    line-height: 30px;
+}
+
+.basic-package ul li s{
+    opacity: .5;
+}
+
+.premium-package .plan-name{
+    font-size: 30px;
+    margin-left: 35px;
+}
+
+.premium-package ul li s{
+    opacity: .5;
+}
+
+.diamond-package{
+    background-color: rgb(40,40,40);
+    width: 280px;
+    margin-bottom: 100px;
+    padding-top: 10px;
+
+}
+
+.diamond-package p{
+    font-size: 20px;
+    font-family: 'Montserrat';
+    margin-left: 110px;
+    color: rgb(171, 223, 58);
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.diamond-package ul{
+    list-style: none;
+    padding: 0px 10px;
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+
+.diamond-package ul li{
+    line-height: 30px;
+}
+
+.diamond-package ul li s{
+    opacity: .5;
+}
+
+.diamond-package .plan-name{
+    font-size: 30px;
+    margin-left: 35px;
+}
+
+.diamond-package ul li s{
+    opacity: .5;
+}
+/* Pricing End */
+
+
+/* footer start */
+.footer-container{
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+}
+
+.quick-links h3{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.quick-links hr{
+    height: 3px;
+    background-color: rgb(171, 223, 58);
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.quick-links ul li{
+    list-style: none;
+    line-height: 20px;
+}
+
+.quick-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.quick-links ul li a:hover{
+    text-decoration: underline;
+}
+
+
+.contact-us{
+    color: #fff;
+}
+
+.contact-us h3{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-us hr{
+    height: 3px;
+    background-color: rgb(171, 223, 58);
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.contact-us i{
+    color: #fff;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.follow-us{
+    color: #fff;
+}
+
+.follow-us h3{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.follow-us hr{
+    height: 3px;
+    background-color: rgb(171, 223, 58);
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.follow-us a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.follow-us a i{
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.follow-us a i:hover{
+    color: rgb(171, 223, 58);
+    transition: .1s;
+}
+/* footer end */
+
+.payment {
+    font-family: 'Montserrat';
+    background-color: #fff;
+    width: 360px;
+    height: 290px;
+    margin: auto;
+    border-radius: 5px;
+    color: #000;
+}
+
+.pay {
+    font-size: 25px;
+    margin-top: 120px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-left: 28px;
+}
+
+.submit {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: greenyellow;
+
+}
+
+select {
+    border: none;
+    background: #f2f2f2;
+    outline: none;
+    padding: 12px;
+    border-radius: 3px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+
+input {
+    border: none;
+    background: #f2f2f2;
+    outline: none;
+    padding: 12px;
+    border-radius: 3px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* CSS code for the success message container */
+#success-message-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+}
+
+/* CSS code for the success message */
+#success-message {
+    background-color: #78c496;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <?php
+session_start();
+?>
+<nav>
+        <div class="nav-bar">
+            <a href="#" class="logo">Muscle <span>Mate</span></a>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#plans">Pricing</a></li>
+            <?php 
+            if(isset($_SESSION['email'])){
+            ?>
+                <a href="register.html" class="register">Register</a>
+                <?php 
+                }
+                ?>
+            </ul>
+        </div>
+    </nav>
+    </nav>
+
+    <!-- Hero Section Start -->
+    <div class="hero">
+        <h1 class="hero-title">DISCOVER YOUR <br><strong>STRONGEST </strong> <span> SELF </span></h1>
+        <p class="hero-subtitle">Elevate your life with our comprehensive workouts</p>
+        <div class="button">
+            <a href="login.html" class="start-now">Start Now</a>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- About Us Start -->
+    <div class="about" id="about">
+        <div class="about-image">
+            <img src="images/pngimg.com - fitness_PNG44.png" alt="image-description">
+        </div>
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p class="about-para">We are a team of experienced fitness professionals who are dedicated to helping you
+                achieve your health and fitness goals. Our modern facility is equipped with the latest fitness
+                equipment and technology, making it the perfect place for you to start your fitness journey.</p>
+            <p class="about-para">Whether you're looking to lose weight, build muscle, improve your cardiovascular
+                health, or simply feel better, our gym has everything you need to succeed. We invite you to join our
+                community and start your fitness journey today!</p>
+        </div>
+    </div>
+    <!-- About Us End -->
+
+    <!-- Courses Start -->
+    <h2 class="course" id="courses">Courses</h2>
+    <div class="course-container">
+        <div class="box">
+            <img src="images/program1.png" alt="">
+            <h3>Strength Training</h3>
+            <p>This course teaches the fundamentals of strength training, including proper form, technique, and
+                programming.</p>
+            <a href="#plans"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="box">
+            <img src="images/program2.png" alt="">
+            <h3>Cardio Exercises</h3>
+            <p>This course focuses on improving cardiovascular fitness through a variety of exercises, including
+                running, cycling, rowing, etc.</p>
+            <a href="#plans"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="box">
+            <img src="images/program4.png" alt="">
+            <h3>Functional Fitness</h3>
+            <p>This course emphasizes exercises that mimic everyday movements and activities, such as pushing, pulling,
+                lifting, and carrying.</p>
+            <a href="#plans"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="box">
+            <img src="images/program3.png" alt="">
+            <h3>Yoga and Mindfulness</h3>
+            <p>This course combines the physical and mental health benefits of yoga and mindfulness meditation.</p>
+            <a href="#plans"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+    <!-- Courses End -->
+
+    <!-- Pricing Start -->
+    <h2 class="pricing" id="plans">Pricing</h2>
+    <p class="cap">CHOOSE A PLAN</p>
+    <div class="pricing-container">
+        <div class="basic-package">
+            <h3 class="plan-name">Basic Plan</h3>
+            <p>&#8377;499</p>
+            <ul>
+                <li><i class="fa-regular fa-circle-check"></i> Gym Access</li>
+                <li><i class="fa-regular fa-circle-check"></i> Access to all courses</li>
+                <li><s><i class="fa-regular fa-circle-check"></i> One Shaker</s></li>
+                <li><s><i class="fa-regular fa-circle-check"></i> Diet plan</s></li>
+                <li><s><i class="fa-regular fa-circle-check"></i> Personal trainer</s></li>
+            </ul>
+            <a href="" class="buy-now">Buy Now</a>
+        </div>
+        <div class="premium-package">
+            <h3 class="plan-name">Premium Plan</h3>
+            <p>&#8377;2999</p>
+            <ul>
+                <li><i class="fa-regular fa-circle-check"></i> Gym Access</li>
+                <li><i class="fa-regular fa-circle-check"></i> Access to all courses</li>
+                <li><i class="fa-regular fa-circle-check"></i> One Shaker</li>
+                <li><s><i class="fa-regular fa-circle-check"></i> Diet plan</s></li>
+                <li><s><i class="fa-regular fa-circle-check"></i> Personal trainer</s></li>
+            </ul>
+            <a href="" class="buy-now">Buy Now</a>
+        </div>
+        <div class="diamond-package">
+            <h3 class="plan-name">Diamond Plan</h3>
+            <p>&#8377;4999</p>
+            <ul>
+                <li><i class="fa-regular fa-circle-check"></i> Gym Access</li>
+                <li><i class="fa-regular fa-circle-check"></i> Access to all courses</li>
+                <li><i class="fa-regular fa-circle-check"></i> One Shaker</li>
+                <li><i class="fa-regular fa-circle-check"></i> Diet plan</li>
+                <li><i class="fa-regular fa-circle-check"></i> Personal trainer</li>
+            </ul>
+            <a href="" class="buy-now">Buy Now</a>
+        </div>
+    </div>
+    <!-- Pricing End -->
+     
+
+    <hr>
+    <!-- Footer -->
+    <footer>
+        <!-- footer start -->
+<div class="footer-container">
+    <div class="quick-links">
+        <h3>Quick Links</h3>
+        <hr>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#plans">Pricing</a></li>
+        </ul>
+    </div>
+
+    <div class="contact-us">
+        <h3>Contact Us</h3>
+        <hr>
+        <i class="fa-solid fa-phone"></i>
+        +91-8591585295
+        <br>
+        <i class="fa-solid fa-envelope"></i>
+        hassankhan4408@gmail.com
+    </div>
+
+    <div class="follow-us">
+        <h3>Follow Us</h3>
+        <hr>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+</div>
+
+<!-- footer end -->
+    </footer>
+</body>
+
+</html>
